@@ -39,8 +39,8 @@ useEffect(() => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto ms-3">
-              <Nav.Link href="/home">Home</Nav.Link>
-              <Nav.Link href="/posts">Posts</Nav.Link>
+              <Nav.Link to="/home">Home</Nav.Link>
+              <Nav.Link to="/posts">Posts</Nav.Link>
               {/* Add more nav links as needed */}
             </Nav>
             <Nav className="ml-auto">
