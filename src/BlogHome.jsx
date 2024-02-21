@@ -1,7 +1,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { Navbar, Nav, Container, Button } from 'react-bootstrap';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { jwtDecode } from 'jwt-decode';
 import './index.css'
 
@@ -39,8 +39,8 @@ useEffect(() => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto ms-3">
-              <Nav.Link to="/home">Home</Nav.Link>
-              <Nav.Link to="/posts">Posts</Nav.Link>
+              <Link to="/home" className="nav-link">Home</Link>
+            <Link to="/posts" className="nav-link">Posts</Link>
               {/* Add more nav links as needed */}
             </Nav>
             <Nav className="ml-auto">

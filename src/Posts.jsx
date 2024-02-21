@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Navbar, Nav, Container, Button, Alert } from 'react-bootstrap';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { jwtDecode } from 'jwt-decode';
 import { fetchPosts, createComment } from './apiService';
 import './Posts.css'
@@ -89,8 +89,8 @@ const Posts = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto ms-3">
-              <Nav.Link href="/home">Home</Nav.Link>
-              <Nav.Link href="/posts">Posts</Nav.Link>
+              <Link to="/home" className="nav-link">Home</Link>
+            <Link to="/posts" className="nav-link">Posts</Link>
               {/* Add more nav links as needed */}
             </Nav>
             <Nav className="ml-auto">
