@@ -1,0 +1,60 @@
+.background {
+    background-color: #141414;
+    height: 100vh;
+}
+.blog-content-container {
+    color: white;
+    padding: 50px;
+     width: 80%;
+     position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -80%);
+        transition: transform 0.8s ease;
+   
+}
+
+.blog-content-title {
+    font-size: 4rem;
+    font-weight: bold;
+}
+.blog-content-container:hover h1 {
+    color: red;
+   
+}
+.blog-content-text {
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+/* Cool hover effect */
+.blog-content-container:hover {
+    transform: scale(1.05);
+    transform: translate(-50%, -125%);
+    /* Scale up on hover */
+  
+    /* Smooth transition */
+    cursor: pointer;
+    /* Show pointer cursor on hover */
+}
+
+@media (max-width: 968px) {
+    .blog-content-container {
+        width: 90%;
+        /* Adjust width for smaller screens */
+        padding: 20px;
+        /* Adjust padding for smaller screens */
+        transform: translate(-50%, -70%);
+        /* Adjust positioning for smaller screens */
+    }
+
+    .blog-content-title {
+        font-size: 2rem;
+        /* Adjust font size for smaller screens */
+    }
+
+    .blog-content-text {
+        font-size: 1rem;
+        /* Adjust font size for smaller screens */
+    }
+}
